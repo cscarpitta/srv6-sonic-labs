@@ -1,0 +1,48 @@
+{
+    "DEVICE_METADATA": {
+        "localhost": {
+            "hwsku": "Force10-S6000",
+            "mac": "52:54:00:74:c1:04",
+            "hostname": "a0",
+            "type": "LeafRouter",
+            "bgp_asn": "65100",
+            "docker_routing_config_mode": "split"
+        }
+    },
+    "LOOPBACK_INTERFACE": {
+        "Loopback0": {},
+        "Loopback0|10.0.1.0/32": {},
+        "Loopback0|fcbb:bbbb:a0::1/128": {}
+    },
+
+    "INTERFACE": {
+        "Ethernet0": {
+            "ipv6_use_link_local_only": "enable"
+        },
+        "Ethernet4": {
+            "vrf_name": "Vrf1"
+        },
+        "Ethernet4|2001:db8:0::2/64": {
+            "vrf_name": "Vrf1"
+        }
+    },
+
+    "VRF": {
+        "Vrf1": {}
+    },
+    
+    "PORT": {
+        "Ethernet0": {
+            "index": "0",
+            "speed": "40000",
+            "admin_status": "up",
+            "mtu": "9100"
+        },
+        "Ethernet4": {
+            "index": "1",
+            "speed": "40000",
+            "admin_status": "up",
+            "mtu": "9100"
+        }
+    }
+}

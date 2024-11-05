@@ -1,0 +1,59 @@
+{
+    "DEVICE_METADATA": {
+        "localhost": {
+            "hwsku": "Force10-S6000",
+            "mac": "52:54:00:74:c1:02",
+            "hostname": "sonic20",
+            "type": "LeafRouter",
+            "bgp_asn": "65020",
+            "docker_routing_config_mode": "split"
+        }
+    },
+    "LOOPBACK_INTERFACE": {
+        "Loopback0": {},
+        "Loopback0|10.0.0.20/32": {},
+        "Loopback0|fcbb:bbbb:20::1/128": {}
+    },
+
+    "INTERFACE": {
+        "Ethernet0": {
+            "ipv6_use_link_local_only": "enable"
+        },
+        "Ethernet4": {
+            "ipv6_use_link_local_only": "enable"
+        },
+        "Ethernet8": {
+            "ipv6_use_link_local_only": "enable"
+        },
+        "Ethernet12": {
+            "ipv6_use_link_local_only": "enable"
+        }
+    },
+    
+    "PORT": {
+        "Ethernet0": {
+            "index": "0",
+            "speed": "40000",
+            "admin_status": "up",
+            "mtu": "9100"
+        },
+        "Ethernet4": {
+            "index": "1",
+            "speed": "40000",
+            "admin_status": "up",
+            "mtu": "9100"
+        },
+        "Ethernet8": {
+            "index": "2",
+            "speed": "40000",
+            "admin_status": "up",
+            "mtu": "9100"
+        },
+        "Ethernet12": {
+            "index": "3",
+            "speed": "40000",
+            "admin_status": "up",
+            "mtu": "9100"
+        }
+    }
+}
